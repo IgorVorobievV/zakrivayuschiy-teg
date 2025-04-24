@@ -160,7 +160,7 @@
 
 .card__like-button {
   display: flex;
-  inline-size: 130px;
+  min-inline-size: 130px;
   border-color: var(--color);
   transition: box-shadow 0.3s ease;
 }
