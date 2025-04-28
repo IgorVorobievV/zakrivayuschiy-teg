@@ -17,22 +17,26 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font, sans-serif);
+  font-family: var(--font, "Arial", sans-serif);
   font-variation-settings: "wght" var(--wght, 400);
   color: var(--color, #000);
   background: var(--bg-img, url("../svg/pattern-light.svg"))
-    var(--bg-color, #fff) fixed;
-  background-size: 4px;
+    var(--bg-color, #fff) fixed 50% 0/4px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding-block: 100px;
 }
 .header {
-  margin-block: 100px;
+  inline-size: min(100%, 700px);
+  margin-inline: auto;
   padding-block-start: 120px;
-  background: var(--bg-color);
-  border: 2px solid var(--color);
+  background: var(--bg-color, #fff);
+  border: 2px solid var(--color, #000);
   line-height: 1;
 }
 .header__logo {
-  font-family: var(--accent-font, sans-serif);
+  font-family: var(--accent-font, fantasy);
   font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
   display: flex;
   gap: 20px;
@@ -56,7 +60,7 @@
   gap: 14px;
 }
 .theme-menu__item {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy);
   font-size: 0.875rem;
   line-height: 1;
 }
@@ -85,7 +89,7 @@
   display: block;
   width: 0%;
   height: 2px;
-  background: var(--color);
+  background: var(--color, #000);
   transition: width 0.3s ease;
   position: absolute;
   bottom: -2px;
@@ -103,14 +107,15 @@
   left: -19px;
   animation: arrow-move 0.5s ease-in-out infinite alternate;
 }
-
 .main {
+  inline-size: min(100%, 700px);
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 .card {
-  background: var(--color);
+  background: var(--color, #000);
   display: flex;
   flex-direction: column;
   font-size: 1.125rem;
@@ -118,18 +123,18 @@
   gap: 2px;
 }
 .card__title {
-  font-variation-settings: "wght" var(--accent-wght);
+  font-variation-settings: "wght" var(--accent-wght, 700);
   padding: 4px 10px 6px;
   font-size: 1.125rem;
   line-height: calc(11 / 9);
-  background: var(--bg-color);
+  background: var(--bg-color, #fff);
 }
 .card__content {
   padding: 25px;
   gap: 25px;
   display: flex;
   flex-direction: column;
-  background: var(--bg-color);
+  background: var(--bg-color, #fff);
 }
 .card__text {
   gap: 27px;
@@ -139,47 +144,45 @@
 }
 .card__buttons {
   display: flex;
-  gap: 12px;
+  gap: 4px;
   justify-content: end;
 }
 .card__button {
   padding: 0;
   background: transparent;
-  cursor: pointer;
-  border: 2px solid transparent;
 }
 .card__button:focus {
   outline: transparent;
 }
 .card__icon-button {
   line-height: 0;
+  cursor: pointer;
+  border: 2px solid transparent;
 }
 .card__icon-button:focus-visible {
-  border-color: var(--color);
+  border: 2px solid var(--color, #000);
 }
-
 .card__like-button {
   display: flex;
   min-inline-size: 130px;
-  border-color: var(--color);
-  transition: box-shadow 0.3s ease;
-}
-.card__like-button:focus {
-  box-shadow: 2px 2px 0 0;
 }
 .button-fill {
   position: relative;
-  transition: color 1s ease;
+  border: 2px solid var(--color, #000);
+  transition:
+    color 1s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
 }
 .button-fill:hover {
-  color: var(--bg-color);
+  color: var(--bg-color, #fff);
 }
 .button-fill::before {
   position: absolute;
   content: "";
   display: block;
   inset: 0;
-  background: var(--color);
+  background: var(--color, #000);
   transform: scaleX(0);
   transform-origin: 0;
   transition: transform 0.5s ease-in-out;
@@ -187,22 +190,29 @@
 .button-fill:hover::before {
   transform: scaleX(1);
 }
+.button-fill:focus {
+  outline: transparent;
+  box-shadow: 2px 2px 0 0;
+}
+.button-fill:focus-visible {
+  border-color: var(--color, #000);
+}
 .button__text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy);
   font-size: 0.875rem;
   line-height: 0.9;
   margin: auto;
   z-index: 1;
 }
-.footer__button {
-  margin: 50px auto 100px;
+.save-button {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  border: 2px solid var(--color);
-  background: var(--bg-color);
-  padding: 16px 18px;
+  border: 2px solid var(--color, #000);
+  background: var(--bg-color, #fff);
+  padding: 15px 20px;
 }
 .floppy-icon {
   fill: currentColor;
@@ -211,23 +221,15 @@
   z-index: 1;
   color: currentColor;
 }
-
 @media (width > 375px) {
-  .header,
-  .main,
-  .footer {
-    width: 100%;
-    max-width: 700px;
-    margin-inline: auto;
-  }
   .header {
     padding-block-start: 136px;
   }
-  .card__buttons {
-    gap: 19px;
-  }
-  .footer__button {
+  .save-button {
     flex-direction: row;
-    padding: 12px 15px;
+  }
+  .floppy-icon {
+    width: 21px;
+    height: 21px;
   }
 }
