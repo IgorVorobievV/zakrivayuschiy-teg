@@ -150,14 +150,14 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
-.img-filter1 {
+.filter-brightness {
   filter: brightness(1.5);
 }
 .card__label {
   position: absolute;
   top: 25px;
   right: 13px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy);
   font-size: initial;
   opacity: 0.5;
   mix-blend-mode: hard-light;
@@ -238,7 +238,7 @@
   margin: auto;
   z-index: 1;
 }
-.img-filter2 {
+.filter-sepia {
   filter: sepia(0.75);
 }
 .blockquote {
@@ -249,22 +249,22 @@
 .quote-author {
   text-align: end;
 }
-.img-filter3 {
+.filter-contrast {
   filter: contrast(1.5);
 }
-.img-filter4 {
+.filter-hue-rotate {
   filter: hue-rotate(90deg);
 }
-.img-filter5 {
+.filter-invert {
   filter: invert(1);
 }
-.img-filter6 {
+.filter-grayscale {
   filter: grayscale(0.75);
 }
-.img-filter7 {
+.filter-blur {
   filter: blur(1px);
 }
-.img-filter8 {
+.filter-multi {
   filter: brightness(125%) saturate(125%) contrast(125%);
 }
 .save-button {
