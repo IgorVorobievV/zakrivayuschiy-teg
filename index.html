@@ -51,13 +51,16 @@
         <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
-        <img
-          loading="lazy"
-          src="./images/image.png"
-          alt="Пиксельный арт фургона с мороженым на фоне ночного неба"
-          title="Пиксельный арт фургона с мороженым на фоне ночного неба"
-          class="card__img"
-        />
+        <div class="card__img-wrapper">
+          <img
+            loading="lazy"
+            src="./images/yandexart-fbvld9598jk973q2hus3.jpg"
+            alt="Пиксельный арт книг на стеллажах у тропинки, уходящей вдаль, и среди деревьев"
+            title="Пиксельный арт книг на стеллажах у тропинки, уходящей вдаль, и среди деревьев"
+            class="card__img filter-brightness"
+          />
+          <p class="card__label">за дело</p>
+        </div>
         <div class="card__content">
           <div class="card__text">
             <p>
@@ -65,7 +68,9 @@
               основами и настроиться на учёбу. И, возможно, подумать, как новые
               знания могут повлиять на ваше будущее.
             </p>
-            <p>Место для ваших воспоминаний о начале обучения.</p>
+            <blockquote>
+              <p>«Путь в тысячу ли начинается с первого шага»</p>
+            </blockquote>
           </div>
           <div class="card__buttons">
             <button type="button" class="card__button card__icon-button">
@@ -75,6 +80,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -109,15 +115,18 @@
           </div>
         </div>
       </article>
-      <!--<article class="card">
+      <article class="card">
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
-        <img
-          loading="lazy"
-          src="./images/image2.png"
-          alt="1 спринт: Я — чистый лист"
-          title="1 спринт: Я — чистый лист"
-          class="card__img"
-        />
+        <div class="card__img-wrapper">
+          <img
+            loading="lazy"
+            src="./images/yandexart-fbvqknuslt4pjkukhqsu.jpg"
+            alt="Пиксельный арт пишущего человека, задумавшегося над листом бумаги"
+            title="Пиксельный арт пишущего человека, задумавшегося над листом бумаги"
+            class="card__img filter-sepia"
+          />
+          <p class="card__label">начать с начала</p>
+        </div>
         <div class="card__content">
           <div class="card__text">
             <p>
@@ -127,7 +136,13 @@
               за этим ощущением скрываются более глубокие вопросы: с чего
               начать? а вдруг будет слишком сложно? что, если я не справлюсь?
             </p>
-            <p>Место для ваших воспоминаний о начале первого спринта.</p>
+            <blockquote class="blockquote">
+              <p>
+                «Страх — это просто иллюзия, которая исчезает, когда ты идёшь
+                ему навстречу»
+              </p>
+              <p class="quote-author">- Наполеон Бонапарт</p>
+            </blockquote>
           </div>
           <div class="card__buttons">
             <button type="button" class="card__button card__icon-button">
@@ -137,6 +152,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -162,7 +178,10 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__button card__like-button button-fill">
+            <button
+              type="button"
+              class="card__button card__like-button button-fill"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -170,13 +189,16 @@
       </article>
       <article class="card">
         <h2 class="card__title">1 спринт: А если не получится?</h2>
-        <img
-          loading="lazy"
-          src="./images/image3.png"
-          alt="1 спринт: А если не получится?"
-          title="1 спринт: А если не получится?"
-          class="card__img"
-        />
+        <div class="card__img-wrapper">
+          <img
+            loading="lazy"
+            src="./images/yandexart-fbv3uedblockdlh4un4o.jpg"
+            alt="Пиксельный арт уходящей в даль каменистой дороги"
+            title="Пиксельный арт уходящей в даль каменистой дороги"
+            class="card__img filter-contrast"
+          />
+          <p class="card__label">получится</p>
+        </div>
         <div class="card__content">
           <div class="card__text">
             <p>
@@ -184,7 +206,10 @@
               могла быстро померкнуть и смениться ожиданием провала. Или вы,
               наоборот, могли вдохновиться успехами и поверить в себя.
             </p>
-            <p>Место для ваших воспоминаний об окончании первого спринта.</p>
+            <blockquote class="blockquote">
+              <p>«Начало — это уже полдела»</p>
+              <p class="quote-author">- Сенека</p>
+            </blockquote>
           </div>
           <div class="card__buttons">
             <button type="button" class="card__button card__icon-button">
@@ -194,6 +219,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -219,7 +245,10 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__button card__like-button button-fill">
+            <button
+              type="button"
+              class="card__button card__like-button button-fill"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -227,13 +256,16 @@
       </article>
       <article class="card">
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
-        <img
-          loading="lazy"
-          src="./images/image4.png"
-          alt="2 спринт: Погоня за идеалом"
-          title="2 спринт: Погоня за идеалом"
-          class="card__img"
-        />
+        <div class="card__img-wrapper">
+          <img
+            loading="lazy"
+            src="./images/yandexart-fbvhuoigjh4rhnvpnphm.jpg"
+            alt="Пиксельный арт тропинки через цветочную поляну в горном лесу"
+            title="Пиксельный арт тропинки через цветочную поляну в горном лесу"
+            class="card__img filter-hue-rotate"
+          />
+          <p class="card__label">разумная достаточность</p>
+        </div>
         <div class="card__content">
           <div class="card__text">
             <p>
@@ -243,7 +275,10 @@
               подвержены перфекционизму и вместо того, чтобы сделать идеально,
               старались просто сделать.
             </p>
-            <p>Место для ваших воспоминаний о начале второго спринта.</p>
+            <blockquote class="blockquote">
+              <p>«Дух неизбежно стремится ввысь — к идеалам»</p>
+              <p class="quote-author">- Цицерон</p>
+            </blockquote>
           </div>
           <div class="card__buttons">
             <button type="button" class="card__button card__icon-button">
@@ -253,6 +288,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -278,7 +314,10 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__button card__like-button button-fill">
+            <button
+              type="button"
+              class="card__button card__like-button button-fill"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -286,13 +325,16 @@
       </article>
       <article class="card">
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
-        <img
-          loading="lazy"
-          src="./images/image5.png"
-          alt="2 спринт: О тех, кто рядом"
-          title="2 спринт: О тех, кто рядом"
-          class="card__img"
-        />
+        <div class="card__img-wrapper">
+          <img
+            loading="lazy"
+            src="./images/yandexart-fbvl31cu0lq99ua9pa8o.jpg"
+            alt="Пиксельный арт одиного мальчика, стоящего на тропе в лесу и смотрящего на далекую гору"
+            title="Пиксельный арт одиного мальчика, стоящего на тропе в лесу и смотрящего на далекую гору"
+            class="card__img filter-invert"
+          />
+          <p class="card__label">интерактивность</p>
+        </div>
         <div class="card__content">
           <div class="card__text">
             <p>
@@ -303,7 +345,12 @@
               поддавался. Осваивать что-то новое легче, когда рядом есть
               единомышленники, не правда ли?
             </p>
-            <p>Место для ваших воспоминаний об окончании второго спринта.</p>
+            <blockquote class="blockquote">
+              <p>
+                «Близкие люди — как воздух: есть — не замечаешь, нет — начинаешь
+                задыхаться!»
+              </p>
+            </blockquote>
           </div>
           <div class="card__buttons">
             <button type="button" class="card__button card__icon-button">
@@ -313,6 +360,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -338,7 +386,10 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__button card__like-button button-fill">
+            <button
+              type="button"
+              class="card__button card__like-button button-fill"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -346,13 +397,16 @@
       </article>
       <article class="card">
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
-        <img
-          loading="lazy"
-          src="./images/image6.png"
-          alt="3 спринт: Обходные стратегии"
-          title="3 спринт: Обходные стратегии"
-          class="card__img"
-        />
+        <div class="card__img-wrapper">
+          <img
+            loading="lazy"
+            src="./images/yandexart-fbva9g1g0ng527t61l2m.jpg"
+            alt="Пиксельный арт рабочего кабинета"
+            title="Пиксельный арт рабочего кабинета"
+            class="card__img filter-grayscale"
+          />
+          <p class="card__label">адаптивность</p>
+        </div>
         <div class="card__content">
           <div class="card__text">
             <p>
@@ -360,7 +414,14 @@
               вам могло показаться, что решения просто иссякли. Значит, пришло
               время посмотреть на задачу под другим углом.
             </p>
-            <p>Место для ваших воспоминаний о начале третьего спринта.</p>
+            <blockquote class="blockquote">
+              <p>
+                «Большая часть проблем либо не имеет решения, либо имеет
+                несколько решений. Лишь очень немногие проблемы имеют только
+                одно решение»
+              </p>
+              <p class="quote-author">- Эдмунд Беркли</p>
+            </blockquote>
           </div>
           <div class="card__buttons">
             <button type="button" class="card__button card__icon-button">
@@ -370,6 +431,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -395,7 +457,10 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__button card__like-button button-fill">
+            <button
+              type="button"
+              class="card__button card__like-button button-fill"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -403,13 +468,16 @@
       </article>
       <article class="card">
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
-        <img
-          loading="lazy"
-          src="./images/image7.png"
-          alt="3 спринт: Когда опускаются руки"
-          title="3 спринт: Когда опускаются руки"
-          class="card__img"
-        />
+        <div class="card__img-wrapper">
+          <img
+            loading="lazy"
+            src="./images/yandexart-fbvb9ts8uvjkjipjrunt.jpg"
+            alt="Пиксельный арт ученика за столом"
+            title="Пиксельный арт ученика за столом"
+            class="card__img filter-blur"
+          />
+          <p class="card__label">отдохни и иди</p>
+        </div>
         <div class="card__content">
           <div class="card__text">
             <p>
@@ -419,7 +487,13 @@
               пожить. В такие моменты очень нужна концентрация. Вспомните,
               откуда вы её черпали.
             </p>
-            <p>Место для ваших воспоминаний об окончании третьего спринта.</p>
+            <blockquote class="blockquote">
+              <p>
+                «Отчаяться каждый может. А вот чтобы совладать с собой, нужно
+                быть человеком»
+              </p>
+              <p class="quote-author">- Джон Стейнбек</p>
+            </blockquote>
           </div>
           <div class="card__buttons">
             <button type="button" class="card__button card__icon-button">
@@ -429,6 +503,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -454,7 +529,10 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__button card__like-button button-fill">
+            <button
+              type="button"
+              class="card__button card__like-button button-fill"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -462,13 +540,16 @@
       </article>
       <article class="card">
         <h2 class="card__title">«Сейчас я здесь»</h2>
-        <img
-          loading="lazy"
-          src="./images/image8.png"
-          alt="«Сейчас я здесь»"
-          title="«Сейчас я здесь»"
-          class="card__img"
-        />
+        <div class="card__img-wrapper">
+          <img
+            loading="lazy"
+            src="./images/yandexart-fbvsp620kc40u5j7haku.jpg"
+            alt="Пиксельный арт стола с книгой перед открытым окном с видом на лес и горы"
+            title="Пиксельный арт стола с книгой перед открытым окном с видом на лес и горы"
+            class="card__img filter-multi"
+          />
+          <p class="card__label">даёшь красотищу</p>
+        </div>
         <div class="card__content">
           <div class="card__text">
             <p>
@@ -479,10 +560,13 @@
               получится, но это тот случай, когда важен сам процесс познания.
               Ведь часто путь — и есть результат.
             </p>
-            <p>
-              Место, чтобы остановиться, подумать и написать, что вы чувствуете
-              в этой точке пути.
-            </p>
+            <blockquote class="blockquote">
+              <p>
+                «Наши знания не имеют конца, потому что предмет познания
+                бесконечен»
+              </p>
+              <p class="quote-author">- Блез Паскаль</p>
+            </blockquote>
           </div>
           <div class="card__buttons">
             <button type="button" class="card__button card__icon-button">
@@ -492,6 +576,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -517,19 +602,40 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__button card__like-button button-fill">
+            <button
+              type="button"
+              class="card__button card__like-button button-fill"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
-      </article>-->
-      <button type="button" class="save-button button-fill">
+      </article>
+      <button
+        type="button"
+        class="save-button button-fill"
+        onclick="window['dialog-floppy'].showModal();"
+        aria-controls="dialog-floppy"
+      >
         <svg class="floppy-icon">
           <use href="./svg/floppy.svg#icon-floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </main>
+    <dialog id="dialog-floppy" class="dialog">
+      <div class="dialog__content">
+        <svg class="floppy-icon">
+          <use href="./svg/floppy.svg#icon-floppy"></use>
+        </svg>
+        <p class="button__text">Вставьте дискету, чтобы продолжить</p>
+      </div>
+      <form class="dialog__form">
+        <button type="submit" class="dialog__button button-fill">
+          <span class="button__text">ок</span>
+        </button>
+      </form>
+    </dialog>
     <script src="./scripts/set-theme.js"></script>
     <script src="./scripts/like.js"></script>
   </body>
